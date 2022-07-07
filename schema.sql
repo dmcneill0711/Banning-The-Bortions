@@ -394,6 +394,214 @@ UPDATE abortion_info
 SET state = 'NJ'
 Where id = '50';
 
+-- Insert New Column On Whether The State Will Ban Abortions Onto The abortion_info Table
+
+ALTER TABLE abortion_info
+ADD banned VARCHAR;
+
+-- Insert Information Into Newly Created Banned Column
+
+UPDATE abortion_info
+SET banned = 'Yes, With Limited Exceptions'
+Where id = '1';
+
+UPDATE abortion_info
+SET banned = 'Yes, With Limited Exceptions'
+Where id = '2';
+
+UPDATE abortion_info
+SET banned = 'Yes, With Limited Exceptions'
+Where id = '3';
+
+UPDATE abortion_info
+SET banned = 'Yes, With Limited Exceptions'
+Where id = '4';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability'
+Where id = '5';
+
+UPDATE abortion_info
+SET banned = 'Yes, With Limited Exceptions'
+Where id = '6';
+
+UPDATE abortion_info
+SET banned = 'Yes, With Limited Exceptions'
+Where id = '7';
+
+UPDATE abortion_info
+SET banned = 'Yes'
+Where id = '8';
+
+UPDATE abortion_info
+SET banned = 'Yes, With Limited Exceptions (6 Weeks)'
+Where id = '9';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability (22 Weeks)'
+Where id = '10';
+
+UPDATE abortion_info
+SET banned = 'Yes, With Limited Exceptions'
+Where id = '11';
+
+UPDATE abortion_info
+SET banned = 'Yes, With Limited Exceptions'
+Where id = '12';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability (22 Weeks)'
+Where id = '13';
+
+UPDATE abortion_info
+SET banned = 'Yes, With Limited Exceptions'
+Where id = '14';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability (22 Weeks)'
+Where id = '15';
+
+UPDATE abortion_info
+SET banned = 'Yes, With Limited Exceptions'
+Where id = '16';
+
+UPDATE abortion_info
+SET banned = 'Yes, With Limited Exceptions'
+Where id = '17';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability'
+Where id = '18';
+
+UPDATE abortion_info
+SET banned = 'No'
+Where id = '19';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability'
+Where id = '20';
+
+UPDATE abortion_info
+SET banned = 'Yes, With Limited Exceptions'
+Where id = '21';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability (22 Weeks)'
+Where id = '22';
+
+UPDATE abortion_info
+SET banned = 'Yes, With Limited Exceptions'
+Where id = '23';
+
+UPDATE abortion_info
+SET banned = 'Yes, With Limited Exceptions (6 Weeks)'
+Where id = '24';
+
+UPDATE abortion_info
+SET banned = 'Yes, With Limited Exceptions (6 Weeks)'
+Where id = '25';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability'
+Where id = '26';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability (3rd Trimester)'
+Where id = '27';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability'
+Where id = '28';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability (22 Weeks)'
+Where id = '29';
+
+UPDATE abortion_info
+SET banned = 'No'
+Where id = '30';
+
+UPDATE abortion_info
+SET banned = 'No'
+Where id = '31';
+
+UPDATE abortion_info
+SET banned = 'No'
+Where id = '32';
+
+UPDATE abortion_info
+SET banned = 'No'
+Where id = '33';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability'
+Where id = '34';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability'
+Where id = '35';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability (22 Weeks)'
+Where id = '36';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability (24 Weeks)'
+Where id = '37';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability (24 Weeks)'
+Where id = '38';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability'
+Where id = '39';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability'
+Where id = '40';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability (24 Weeks)'
+Where id = '41';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability'
+Where id = '42';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability'
+Where id = '43';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability'
+Where id = '44';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability (22 Weeks)'
+Where id = '45';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability'
+Where id = '46';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability (24 Weeks)'
+Where id = '47';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability'
+Where id = '48';
+
+UPDATE abortion_info
+SET banned = 'No, Until Fetal Viability'
+Where id = '49';
+
+UPDATE abortion_info
+SET banned = 'No'
+Where id = '50';
+
+
 -- Queries Run
 
 -- To Get Any Information From Each State Based On Year:
@@ -402,11 +610,14 @@ SELECT *
 FROM national_pregnancy
 WHERE year = 'year';
 
--- (years available: 1988, 1992, 1996, 2000, 2005-2017)
+-- (Years Available: 1988, 1992, 1996, 2000, 2005-2017)
+-- To Target Specific Columns, Swap Out The * For Specific Columns
 
 -- To Get Any Information From 2017 (The Latest Year)
 
 SELECT *
-FROM national_pregnancy
-INNER JOIN abortion_info
-    ON national_pregnancy.state = abortion_info.state
+FROM national_pregnancy, abortion_info
+WHERE national_pregnancy.year = '2017' 
+AND national_pregnancy.state = abortion_info.state;
+
+-- To Target Specific Columns, Swap Out The * For Specific Columns
