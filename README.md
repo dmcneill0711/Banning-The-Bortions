@@ -26,8 +26,8 @@ No one should be forced into carrying a fetus to full term against their will.
 <p><strong>-SQLAlchemy</strong></p>
 <p><strong>-PANDAS</strong></p>
 <p><strong>-Leaflet:</strong></p>
-<p>  Plugins Used:</p>
-<p>  - </p>
+<p><i>      Plugins Used:</i></p>
+<p><i>      - </i></p>
 <hr>
 
 <b>Resources:</b>
@@ -36,10 +36,8 @@ No one should be forced into carrying a fetus to full term against their will.
 <p>-https://www.guttmacher.org/report/pregnancies-births-abortions-in-united-states-1973-2017</p>
 <p><b>Link To Download Dataset:</b></p>
 <p>-https://osf.io/kthnf</p>
-<br> 
 <p><b>Article On Abortion Rates in 2022:</b> <i>(The Downloadable CSV Of Abortion Rates is From The Year 2017)</i></p>
 <p>https://worldpopulationreview.com/state-rankings/abortion-rates-by-state</p>
-<br> 
 <p><b>News Article For Banned Information: </b></p>
 <p>-https://www.usnews.com/news/best-states/articles/a-guide-to-abortion-laws-by-state</p>
 <hr>
