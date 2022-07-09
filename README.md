@@ -37,7 +37,7 @@ No one should be forced into carrying a fetus to full term against their will.
 <p><b>Link To Download Dataset:</b></p>
 <p>-https://osf.io/kthnf</p>
 <p><b>Article On Abortion Rates in 2022:</b> <i>(The Downloadable CSV Of Abortion Rates is From The Year 2017)</i></p>
-<p>https://worldpopulationreview.com/state-rankings/abortion-rates-by-state</p>
+<p>-https://worldpopulationreview.com/state-rankings/abortion-rates-by-state</p>
 <p><b>News Article For Banned Information: </b></p>
 <p>-https://www.usnews.com/news/best-states/articles/a-guide-to-abortion-laws-by-state</p>
 <hr>
