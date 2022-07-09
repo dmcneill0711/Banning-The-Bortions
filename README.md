@@ -1,11 +1,10 @@
 # Banning-The-Bortions
+<br>
 
 With the overturning of <b>Roe V. Wade</b>, the United States Supreme Court is currently facing a major backlash. With hundreds of rage-fueled protests being organized nationwide, this blatant violation of a person's "right to privacy <i>(and just their human rights in general)</i>," to anyone seeking an abortion is just another battle in this neverending war against those that society deems as second class citizens.
-
 <br>
 
 In order to narrow down the dataset, the decision was made to only focus on those under the age of 25. This is due to the fact that the older a person is, the likelihood that the pregnancy was planned drastically increases. If this person is in need of an abortion, it is most likely due to medical reasons, like endangerment to the fetus carrier's health, or the pregnancy becoming nonviable. A majority of the unintended/unwanted pregnancies occur in those who are under the age of 25. These are the ones who are the most in need of access to safe, legal abortions since they are younger, tend to be less settled <i>(i.e. lacking in finances and other aspects of stability)</i>, and just don't have the desire to be parents yet... <strong>Which is the most important reason of all.</strong>
-
 <br>
 
 No one should be forced into carrying a fetus to full term against their will. 
@@ -13,7 +12,6 @@ No one should be forced into carrying a fetus to full term against their will.
 <hr>
 
 <b>So What Are We To Do?</b>
-
 <br>
 
 <p>In an attempt to do our part to stand up against this ruling, we decided to create an interactive map of the U.S. This map will provide useful information, such as:</p>
@@ -24,25 +22,26 @@ No one should be forced into carrying a fetus to full term against their will.
 
 <hr>
 
-<b>Tools Used:</b>
-<p>-SQLAlchemy</p>
-<p>-PANDAS</p>
-<p>-Leaflet:</p>
+<p><b>Tools Used:</b></p>
+<p><strong>-SQLAlchemy</strong></p>
+<p><strong>-PANDAS</strong></p>
+<p><strong>-Leaflet:</strong></p>
 <p>  Plugins Used:</p>
 <p>  - </p>
 <hr>
+
 <b>Resources:</b>
 
-<b>Report On Pregnancies/Births/Abortions from 1973-2017:</b>
--https://www.guttmacher.org/report/pregnancies-births-abortions-in-united-states-1973-2017
-<b>Link To Download Dataset:</b>
--https://osf.io/kthnf
+<p><b>Report On Pregnancies/Births/Abortions from 1973-2017:</b></p>
+<p>-https://www.guttmacher.org/report/pregnancies-births-abortions-in-united-states-1973-2017</p>
+<p><b>Link To Download Dataset:</b></p>
+<p>-https://osf.io/kthnf</p>
 <br> 
-<b>Article On Abortion Rates in 2022:</b> <i>(The Downloadable CSV Of Abortion Rates is From The Year 2017)</i>
-https://worldpopulationreview.com/state-rankings/abortion-rates-by-state
+<p><b>Article On Abortion Rates in 2022:</b> <i>(The Downloadable CSV Of Abortion Rates is From The Year 2017)</i></p>
+<p>https://worldpopulationreview.com/state-rankings/abortion-rates-by-state</p>
 <br> 
-<b>News Article For Banned Information: </b>
--https://www.usnews.com/news/best-states/articles/a-guide-to-abortion-laws-by-state
+<p><b>News Article For Banned Information: </b></p>
+<p>-https://www.usnews.com/news/best-states/articles/a-guide-to-abortion-laws-by-state</p>
 <hr>
 <p><b>Contributors:</b></p>
 <strong>Elton Cummings: </strong>
