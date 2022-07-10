@@ -8,10 +8,9 @@ In order to narrow down the dataset, the decision was made to only focus on thos
 <br>
 
 No one should be forced into carrying a fetus to full term against their will. 
-
 <hr>
 
-<b>So What Are We To Do?</b>
+<b>So What Do We Do?</b>
 <br>
 
 <p>In an attempt to do our part to stand up against this ruling, we decided to create an interactive map of the U.S. This map will provide useful information, such as:</p>
@@ -19,18 +18,42 @@ No one should be forced into carrying a fetus to full term against their will.
 <p>- What the new abortion laws of each state will be and how far into the pregnancy a person can obtain an abortion. </p>
 <p>- Abortion information from state to state throughout the years. </p>
 <p><i>The latest year of the dataset is 2017, so that's where the trends end, but the predictions of each state's decision on banning abortions is from July of this year.</i></p>
+<hr>
 
+<b>How Does It Work?:</b>
+<br>
+
+<p><b>Step 1: Build The Database</b></p>
+<p> Using the schema.sql, build the database that will house all of the information from the 2 CSVs provided. Create the 2 tables, upload the CSVs, and then use the rest of the schema to edit the tables to get the final database. The information predicting the new abortion laws from 2022 is included in the schema and will need to be inputted separately as well.</p>
+<p><b>Step 2: Launch</b></p>
+<p> Using the information gathered, the program will 
+<hr>
+
+<b>Languages Used:</b>
+<br>
+
+<p>-SQL</p>
+<p>-HTML</p>
+<p>-Python</p>
+<p>-Javascript</p>
 <hr>
 
 <p><b>Tools Used:</b></p>
+<br>
+
+<p><strong>PANDAS</strong></p>
+<p><strong>pgAdmin</strong></p>
 <p><strong>-SQLAlchemy</strong></p>
-<p><strong>-PANDAS</strong></p>
-<p><strong>-Leaflet:</strong></p>
+<p><strong>-Jupyter Notebook</strong></p>
+<p><strong>-Visual Studio Code</strong></p>
+<p><strong>-Plotly</strong></p>
+<p><strong>-LeafletJS: (javascript library)</strong></p>
 <p><i>      Plugins Used:</i></p>
 <p><i>      - </i></p>
 <hr>
 
 <b>Resources:</b>
+<br>
 
 <p><b>Report On Pregnancies/Births/Abortions from 1973-2017:</b></p>
 <p>-https://www.guttmacher.org/report/pregnancies-births-abortions-in-united-states-1973-2017</p>
@@ -41,7 +64,10 @@ No one should be forced into carrying a fetus to full term against their will.
 <p><b>News Article For Banned Information: </b></p>
 <p>-https://www.usnews.com/news/best-states/articles/a-guide-to-abortion-laws-by-state</p>
 <hr>
+
 <p><b>Contributors:</b></p>
+<br>
+
 <strong>Elton Cummings: </strong>
 <p>  LinkedIn:  </p>
 <p>  GitHub:   </p>
