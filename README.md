@@ -13,7 +13,7 @@ No one should be forced into carrying a fetus to full term against their will.
 <b>So What Do We Do?</b>
 <br>
 
-<p>In an attempt to do our part to stand up against this ruling, we decided to create an interactive map of the U.S. This map will provide useful information, such as:</p>
+<p>In an attempt to do our part to stand up against this ruling, we decided to create an informative, interactive map of the U.S. This map will provide useful information, such as:</p>
 <p>- The number of abortion clinics in each state. </p>
 <p>- What the new abortion laws of each state will be and how far into the pregnancy a person can obtain an abortion. </p>
 <p>- Abortion information from state to state throughout the years. </p>
@@ -63,6 +63,11 @@ No one should be forced into carrying a fetus to full term against their will.
 <p>-https://worldpopulationreview.com/state-rankings/abortion-rates-by-state</p>
 <p><b>News Article For Banned Information: </b></p>
 <p>-https://www.usnews.com/news/best-states/articles/a-guide-to-abortion-laws-by-state</p>
+<p><b>GeoJSON of the United States:</b> <i>(Click On: 'US States: GeoJSON' File to Download</i></p>
+<p>-https://eric.clst.org/tech/usgeojson/</p>
+<p><b>Coordinates of Each State's Capital:</b></p>
+<p>-https://github.com/jasperdebie/VisInfo/blob/master/us-state-capitals.csv</p>
+<p><i>This information was used to create a customized JSON file that includes the latitude and longitude of each state's capital, the name of each state's capital, the name of the state, and the banned information from the news article above</i></p> 
 <hr>
 
 <p><b>Contributors:</b></p>
