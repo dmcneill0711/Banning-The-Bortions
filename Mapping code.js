@@ -1,6 +1,6 @@
 // A function to determine the marker size based on totalAbortions, totalBirths, and abortionClinics
-function markerSize(population) {
-    return Math.sqrt(population) * 50;
+function markerSize(total) {
+    return Math.sqrt(total) * 50;
   }
   
   // An array that contains all the information needed to create State, totalAbortions, totalBirths, & abortionClinics markers
@@ -10,80 +10,80 @@ function markerSize(population) {
       coordinates: [40.7128, -74.0059],
       state: {
         name: "New York State",
-        population: 20201249
+        total: 20201249
       },
       totalAbortions: {
-        population: 105380
+        total: 105380
       },
       totalBirths: {
-        population: 101250
+        total: 101250
       },
       abortionClinics: {
-          population: 113
+        total: 113
       }
     },
     {
       coordinates: [34.0522, -118.2437],
       state: {
         name: "California",
-        population: 39538223
+        total: 39538223
       },
       totalAbortions: {
-        population: 132680
+        total: 132680
       },
       totalBirths: {
-        population: 471658
+        total: 471658
       },
       abortionClinics: {
-        population: 161
+        total: 161
       }
     },
     {
       coordinates: [41.8781, -87.6298],
       state: {
         name: "Illinois",
-        population: 12812508
+        total: 12812508
       },
       totalAbortions: {
-        population: 42080
+        total: 42080
       },
       totalBirths: {
-        population: 149030
+        total: 149030
       },
       abortionClinics: {
-        population: 25
+        total: 25
       }
     },  
     {
       coordinates: [29.7604, -95.3698],
       state: {
         name: "Texas",
-        population: 29145505
+        total: 29145505
       },
       totalAbortions: {
-        population: 55440
+        total: 55440
       },
       totalBirths: {
-        population: 382050
+        total: 382050
       },
       abortionClinics: {
-        population: 21
+        total: 21
       }
     },
     {
       coordinates: [41.2524, -95.9980],
       state: {
         name: "Nebraska",
-        population: 1961504
+        total: 1961504
       },
       totalAbortions: {
-        population: 2020
+        total: 2020
       },
       totalBirths: {
-        population: 25821
+        total: 25821
       },
       abortionClinics: {
-        population: 3
+        total: 3
       }
     }
   ];
@@ -151,7 +151,7 @@ function markerSize(population) {
   });
   
   
-  // Create two separate layer groups: one for the city markers and another for the state markers.
+  // Create separate layer groups: one for the state, totaltAbortions, totalBirths, and abortionClinics.
   var states = L.layerGroup(stateMarkers);
   var totalAbortions = L.layerGroup(totalAbortionsMarkers);
   var totalBirths = L.layerGroup(totalBirthsMarkers);
@@ -163,7 +163,7 @@ function markerSize(population) {
     "Topographic Map": topo
   };
   
-  // Create an overlayMaps object to contain  "totalAbortions", "totalBirths", "abortionClinics", and "abortionRatio" layers
+  // Create an overlayMaps object to contain  "totalAbortions", "totalBirths", and "abortionClinics" layers
   var overlayMaps = {
     "totalAbortions": Abortions,
     "totalBirths": Births,
