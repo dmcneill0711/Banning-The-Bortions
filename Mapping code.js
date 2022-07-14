@@ -1,9 +1,9 @@
-// A function to determine the marker size based on the population
+// A function to determine the marker size based on totalAbortions, totalBirths, and abortionClinics
 function markerSize(population) {
     return Math.sqrt(population) * 50;
   }
   
-  // An array that contains all the information needed to create State, abortionRate, totalAbortions, totalBirths, abortionClinics, and abortionRatio markers
+  // An array that contains all the information needed to create State, totalAbortions, totalBirths, & abortionClinics markers
   // Population Data Source: U.S. 2020 Decennial Census
   var locations = [
     {
@@ -12,9 +12,14 @@ function markerSize(population) {
         name: "New York State",
         population: 20201249
       },
-      city: {
-        name: "New York",
-        population: 8804190
+      totalAbortions: {
+        population: 105380
+      },
+      totalBirths: {
+        population: 101250
+      },
+      abortionClinics: {
+          population: 113
       }
     },
     {
@@ -23,9 +28,14 @@ function markerSize(population) {
         name: "California",
         population: 39538223
       },
-      city: {
-        name: "Lost Angeles",
-        population: 3898747
+      totalAbortions: {
+        population: 132680
+      },
+      totalBirths: {
+        population: 471658
+      },
+      abortionClinics: {
+        population: 161
       }
     },
     {
@@ -34,20 +44,30 @@ function markerSize(population) {
         name: "Illinois",
         population: 12812508
       },
-      city: {
-        name: "Chicago",
-        population: 2746388
+      totalAbortions: {
+        population: 42080
+      },
+      totalBirths: {
+        population: 149030
+      },
+      abortionClinics: {
+        population: 25
       }
-    },
+    },  
     {
       coordinates: [29.7604, -95.3698],
       state: {
         name: "Texas",
         population: 29145505
       },
-      city: {
-        name: "Houston",
-        population: 2304580
+      totalAbortions: {
+        population: 55440
+      },
+      totalBirths: {
+        population: 382050
+      },
+      abortionClinics: {
+        population: 21
       }
     },
     {
@@ -56,18 +76,25 @@ function markerSize(population) {
         name: "Nebraska",
         population: 1961504
       },
-      city: {
-        name: "Omaha",
-        population: 486051
+      totalAbortions: {
+        population: 2020
+      },
+      totalBirths: {
+        population: 25821
+      },
+      abortionClinics: {
+        population: 3
       }
     }
   ];
   
-  // Define arrays to hold the created city and state markers.
-  var cityMarkers = [];
+  // Define arrays to hold the created totalAbortions, totalBirths, abortionClinics, and state markers.
+  var totalAbortionsMarkers = [];
+  var totalBirthsMarkers = [];
+  var abortionClinicsMarkers = [];
   var stateMarkers = [];
   
-  // Loop through locations, and create the city and state markers.
+  // Loop through locations, and create the totalAbortions, totalBirths, abortionClinics, and state markers.
   for (var i = 0; i < locations.length; i++) {
     // Set the marker radius for the state by passing the population to the markerSize() function.
     stateMarkers.push(
@@ -80,17 +107,39 @@ function markerSize(population) {
       })
     );
   
-    // Set the marker radius for the city by passing the population to the markerSize() function.
-    cityMarkers.push(
+    // Set the marker radius for totalAbortions by passing the population to the markerSize() function.
+    totalAbortionsMarkers.push(
       L.circle(locations[i].coordinates, {
         stroke: false,
         fillOpacity: 0.75,
-        color: "purple",
-        fillColor: "purple",
-        radius: markerSize(locations[i].city.population)
+        color: "red",
+        fillColor: "red",
+        radius: markerSize(locations[i].totalAbortions.population)
       })
     );
-  }
+   
+    // Set the marker radius for totalBirths by passing the population to the markerSize() function.
+    totalBirthsMarkers.push(
+        L.circle(locations[i].coordinates, {
+          stroke: false,
+          fillOpacity: 0.75,
+          color: "red",
+          fillColor: "red",
+          radius: markerSize(locations[i].totalBirths.population)
+        })
+    );
+
+    // Set the marker radius for abortionClinics by passing the population to the markerSize() function.
+    abortionClinicsMarkers.push(
+        L.circle(locations[i].coordinates, {
+          stroke: false,
+          fillOpacity: 0.75,
+          color: "purple",
+          fillColor: "purple",
+          radius: markerSize(locations[i].abortionClinics.population)
+        })
+      );
+    }  
   
   // Create the base layers.
   var street = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -104,7 +153,9 @@ function markerSize(population) {
   
   // Create two separate layer groups: one for the city markers and another for the state markers.
   var states = L.layerGroup(stateMarkers);
-  var cities = L.layerGroup(cityMarkers);
+  var totalAbortions = L.layerGroup(totalAbortionsMarkers);
+  var totalBirths = L.layerGroup(totalBirthsMarkers);
+  var abortionClinics = L.layerGroup(abortionClinicsMarkers);
   
   // Create a baseMaps object to contain the streetmap and the darkmap.
   var baseMaps = {
@@ -112,10 +163,11 @@ function markerSize(population) {
     "Topographic Map": topo
   };
   
-  // Create an overlayMaps object to contain the "State Population" and "City Population" layers
+  // Create an overlayMaps object to contain  "totalAbortions", "totalBirths", "abortionClinics", and "abortionRatio" layers
   var overlayMaps = {
-    "State Population": states,
-    "City Population": cities
+    "totalAbortions": Abortions,
+    "totalBirths": Births,
+    "abortionClinics": Clinics,
   };
   
   // Modify the map so that it has the streetmap, states, and cities layers
@@ -123,7 +175,7 @@ function markerSize(population) {
     center: [
       37.09, -95.71
     ],
-    zoom: 5
+    zoom: 50
   });
   
   // Create a layer control that contains our baseMaps and overlayMaps, and add them to the map.
