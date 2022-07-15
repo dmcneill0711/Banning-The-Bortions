@@ -74,7 +74,7 @@ No one should be forced into carrying a fetus to full term against their will.
 <p>-https://github.com/jasperdebie/VisInfo/blob/master/us-state-capitals.csv</p>
 <p><b>Population of Each State In 2017:</b> <i>We Used: nst-eset2017-alldata.csv </i>*</p>
 <p>-https://www2.census.gov/programs-surveys/popest/datasets/2010-2017/national/totals/</p>
-<p><i>*Some or all of the information was used to create a customized JSON file that includes the latitude and longitude of each state's capital, the name of each state's capital, the name of the state, and the banned information from the news article above</i></p> 
+<p><i>*Some or all of the information was used to create a customized JSON file that includes the latitude and longitude of each state's capital, the name of each state's capital, the name of the state, the state's population and number of abortion clinics in 2017, and the current banned information from 2022</i></p> 
 <hr>
 
 <p><b>Contributors:</b></p>
