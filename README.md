@@ -13,10 +13,10 @@ No one should be forced into carrying a fetus to full term against their will.
 <b>So What Do We Do?</b>
 <br>
 
-<p>In an attempt to do our part to stand up against this ruling, we decided to create an informative, interactive map of the U.S. This map will provide useful information, such as:</p>
+<p>In an attempt to do our part to stand up against this ruling, we decided to create an informative page dedicated to the history of abortions in the U.S. This will include a map that will provide useful information, such as:</p>
+<p>- The population of each state</p>
 <p>- The number of abortion clinics in each state. </p>
-<p>- What the new abortion laws of each state will be and how far into the pregnancy a person can obtain an abortion. </p>
-<p>- Abortion information from state to state throughout the years. </p>
+<p>- What the new abortion laws of each state will be and how far into the pregnancy a person can obtain an abortion. (Colorcoded) </p>
 <p><i>The latest year of the dataset is 2017, so that's where the trends end, but the predictions of each state's decision on banning abortions is from July of this year.</i></p>
 <hr>
 
@@ -24,9 +24,13 @@ No one should be forced into carrying a fetus to full term against their will.
 <br>
 
 <p><b>Step 1: Build The Database</b></p>
-<p> Using the schema.sql, build the database that will house all of the information from the 2 CSVs provided. Create the 2 tables, upload the CSVs, and then use the rest of the schema to edit the tables to get the final database. The information predicting the new abortion laws from 2022 is included in the schema and will need to be inputted separately as well.</p>
-<p><b>Step 2: Launch</b></p>
-<p> Using the information gathered, the program will 
+<p>   Using the schema.sql, build the database that will house all of the information from the 2 CSVs provided. Create the 2 tables, upload the CSVs, and then use the rest of the schema to edit the tables to get the final database. The information predicting the new abortion laws from 2022 is included in the schema and will need to be inputted separately as well.</p>
+<p><b>Step 2: Launch The Index</b></p>
+<p> Using the information gathered, the program will launch the website that will:</p>
+<p>   -Provide links to other pages that include tables of the datasets</p>
+<p>   -Using Leaflet.js, an interactive map will populate and display relevant information. When you click on the state, the marker will provide </p>
+<p>   -Charts and graphs outlining the trends of abortion in the U.S.</p>
+<p>   -Information, like hotlines and websites, for those seeking an abortion.</p>
 <hr>
 
 <b>Languages Used:</b>
@@ -49,7 +53,8 @@ No one should be forced into carrying a fetus to full term against their will.
 <p><strong>-Plotly</strong></p>
 <p><strong>-LeafletJS: (javascript library)</strong></p>
 <p><i>      Plugins Used:</i></p>
-<p><i>      - </i></p>
+<p><i>      - Leaflet.Legend (https://github.com/ptma/Leaflet.Legend)</i></p>
+<p><i>      - Leaflet.Leaflet.Icon.Glyph (https://github.com/Leaflet/Leaflet.Icon.Glyph)</i></p>
 <hr>
 
 <b>Resources:</b>
@@ -59,15 +64,17 @@ No one should be forced into carrying a fetus to full term against their will.
 <p>-https://www.guttmacher.org/report/pregnancies-births-abortions-in-united-states-1973-2017</p>
 <p><b>Link To Download Dataset:</b></p>
 <p>-https://osf.io/kthnf</p>
-<p><b>Article On Abortion Rates in 2022:</b> <i>(The Downloadable CSV Of Abortion Rates is From The Year 2017)</i></p>
+<p><b>Article On Abortion Rates in 2022:</b> <i>(The Downloadable CSV Of Abortion Rates is From The Year 2017) </i>*</p>
 <p>-https://worldpopulationreview.com/state-rankings/abortion-rates-by-state</p>
-<p><b>News Article For Banned Information: </b></p>
+<p><b>News Article For Banned Information: *</b></p>
 <p>-https://www.usnews.com/news/best-states/articles/a-guide-to-abortion-laws-by-state</p>
 <p><b>GeoJSON of the United States:</b> <i>(Click On: 'US States: GeoJSON' File to Download</i></p>
 <p>-https://eric.clst.org/tech/usgeojson/</p>
-<p><b>Coordinates of Each State's Capital:</b></p>
+<p><b>Coordinates of Each State's Capital: *</b></p>
 <p>-https://github.com/jasperdebie/VisInfo/blob/master/us-state-capitals.csv</p>
-<p><i>This information was used to create a customized JSON file that includes the latitude and longitude of each state's capital, the name of each state's capital, the name of the state, and the banned information from the news article above</i></p> 
+<p><b>Population of Each State In 2017:</b> <i>We Used: nst-eset2017-alldata.csv </i>*</p>
+<p>-https://www2.census.gov/programs-surveys/popest/datasets/2010-2017/national/totals/</p>
+<p><i>*Some or all of the information was used to create a customized JSON file that includes the latitude and longitude of each state's capital, the name of each state's capital, the name of the state, and the banned information from the news article above</i></p> 
 <hr>
 
 <p><b>Contributors:</b></p>
