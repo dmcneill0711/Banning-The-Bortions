@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Visualization Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+</head>
+<body>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="col-sm-12 col-md-2">
+            <a class="navbar-brand" style="background-color:rgb(69, 66, 234);" href="../index.html">BACK TO HOME</a>
+            <button class="navbar-toggler border border-black " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          </div> 
+          <div class="col-sm-12 col-md-8"></div>
+          <!-- add drop down  -->
+          <div class="col-sm-12 col-md-2">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <strong>Datasets</strong> 
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="Datasets.html">Banning Abortion Volume scatter plot</a>
+                  <a class="dropdown-item" href="Total_abortion.html">Total Abortion</a>                  
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html"><strong>Data_1</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data_2.html"><strong>Data_2</strong></a>
+            </li>
+                          
+          </ul>
+        </div>  
+        </div>
+    </nav>
+</div>
+  
+<div class="container">
+    <section class="row">
+      <div class=box>
+      <div>
+        <div class="description-content">
+          <h3 class="description-header">Overall Our data</h3>
+          <hr>
+             <div class="container">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="imageNav-header">Banning Abortion Volume</div>
+                    <a href="Datasets.html">
+                    <img src="../assets/images/Fig1.png" alt="Banning Abortion Volume scatter plot", class="imageNav-photo">
+                    </a>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="imageNav-header">Total Abortion</div>
+                    <a href="Total_abortion.html">
+                    <img src="../assets/images/Fig2.png" alt="Total Abortion",  class="imageNav-photo">
+                    </a>
+                  </div>
+                  </div>
+                </div>     
+      </div>
+    </div>
+</div>
+</section>
+</div>
+
+<footer>
+    <div class="footer">&copy; Copyright @2022</div>
+  </footer>
+
+</body>
+</html>
