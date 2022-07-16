@@ -71,11 +71,11 @@ Which is the most important reason of all...
 <p>&ensp; -https://worldpopulationreview.com/state-rankings/abortion-rates-by-state</p>
 <p><b>News Article For Banned Information: *</b></p>
 <p>&ensp; -https://www.usnews.com/news/best-states/articles/a-guide-to-abortion-laws-by-state</p>
-<p><b>GeoJSON of the United States:</b> <i>(Click On: 'US States: GeoJSON' File to Download</i></p>
+<p><b>GeoJSON of the United States:</b> <i>(Click On: 'US States: GeoJSON' File to Download)</i></p>
 <p>&ensp; -https://eric.clst.org/tech/usgeojson/</p>
 <p><b>Coordinates of Each State's Capital: *</b></p>
 <p>&ensp; -https://github.com/jasperdebie/VisInfo/blob/master/us-state-capitals.csv</p>
-<p><b>Population of Each State In 2017:</b> <i>We Used: nst-eset2017-alldata.csv </i>*</p>
+<p><b>Population of Each State In 2017:</b> <i>(Click On: nst-eset2017-alldata.csv)</i>*</p>
 <p>&ensp; -https://www2.census.gov/programs-surveys/popest/datasets/2010-2017/national/totals/</p>
 <p><i>*Some or all of the information was used to create a customized JSON file that includes the latitude and longitude of each state's capital, the name of each state's capital, the name of the state, the state's population and number of abortion clinics in 2017, and the current banned information from 2022</i></p> 
 <hr>
