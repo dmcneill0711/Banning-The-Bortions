@@ -80,12 +80,25 @@ Which is the most important reason of all...
 <p><i>*Some or all of the information was used to create a customized JSON file that includes the latitude and longitude of each state's capital, the name of each state's capital, the name of the state, the state's population and number of abortion clinics in 2017, and the current banned information from 2022</i></p> 
 <hr>
 
+<b>Who Did What?:</b>
+<br>
+<p><b>Peter Gunn: </b></p>
+<ul>
+<li>Data Gatherer and Visualizations Creator</li>
+</ul>
+<p><b>Diandra McNeill: </b></p>
+<ul>
+<li>Data Cleaner, Leaflet Map Creator, Page Author</li>
+</ul>
+<p><b>Hana Tafesse: </b></p>
+<ul>
+<li>HTML/Site Builder</li>
+</ul>
+<hr>
+
 <p><b>Contributors:</b></p>
 <br>
 
-<strong>Elton Cummings: </strong>
-<p>  LinkedIn:  </p>
-<p>  GitHub:   </p>
 <strong>Peter Gunn: </strong>
 <p>  LinkedIn: www.linkedin.com/in/apetergunn  </p>
 <p>  GitHub: https://github.com/Peterg0205  </p>
